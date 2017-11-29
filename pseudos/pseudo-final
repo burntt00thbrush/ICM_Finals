@@ -1,0 +1,43 @@
+var button = "";
+
+function whichButton() {
+  if(powerState == true && mouseIsPressed){
+    if (dist(mouseX, mouseY, buttonA.x, buttonA.y) < buttonA.d/2) {
+      button = "buttonA";
+    }
+    else if (dist(mouseX, mouseY, buttonB.x, buttonB.y) < buttonB.d/2) {
+      button = "buttonB";
+    }
+    else if (dist(mouseX, mouseY, buttonA.x, buttonA.y) < buttonA.d/2) {
+    }
+  }
+  else if (powerState == false) {
+    fill(133, 153, 84);
+    rect(130,100,200,180);
+  }
+}
+
+function mousePressed() {
+  if(button == "buttonA") {
+    image(ICMgroup,130,100,200,180);
+  }
+  else if(button == "buttonB") {
+    image(pokemon,130,100,200,180);
+  }
+}
+
+
+var A1
+var A2
+
+var B1
+var B2
+
+var C1
+var C2
+
+
+var stateA1= false
+var stateA2= false
+
+}
